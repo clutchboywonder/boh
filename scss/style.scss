@@ -1,0 +1,241 @@
+// Fonts
+
+@font-face {
+  font-family: Searfont;
+  src: url(../fonts/Searfont/Searfont.ttf);
+}
+
+// Variables
+$primary-font: 'Bangers', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+$heading-font: 'Searfont', 'Bangers', sans-serif;
+
+
+// Color Palette
+
+$primary-color: #A51A37;
+$secondary-color: #E2B24F;
+
+// Imports
+@import "_comic-layout";
+
+@import "_buttons";
+
+
+// General styles
+
+body {
+  padding-top: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+  letter-spacing: 0.2em;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $primary-color;
+}
+
+a:hover {
+  color: $secondary-color;
+}
+
+section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+header {
+  padding-bottom: 75px;
+}
+
+// Navigation
+
+#logo:hover {
+  opacity: 0.8;
+}
+
+nav {
+  font-family: $primary-font;
+  background-color: #fff;
+  border-bottom: 2px solid $primary-color;
+  box-shadow: 2px 2px 10px rgba(0,0,0, .2);
+}
+
+.nav-item {
+  font-size: 1.5em;
+  transition: ease-in-out .5s;
+}
+
+.nav-item:hover {
+  letter-spacing: 0.2em;
+}
+
+.nav-link:hover {
+  color: $secondary-color !important;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+// Header
+
+.intro {
+  background: url('../img/welcome.jpg') no-repeat;
+  background-color: rgba(0,0,0, .2);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 78px);
+}
+
+.flex-container {
+  padding-top: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-container {
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,.2);
+       box-shadow: 0 10px 6px -6px rgba(0,0,0,.2);
+  padding: 1em;
+  background-color: rgba(165, 26, 55, .9);
+}
+
+.intro-title {
+  width: 100%;
+  font-size: 3em;
+  color: #fff;
+}
+
+.intro-text {
+  line-height: 1.1;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 0;
+}
+
+// About Section
+
+.about-text {
+  font-size: 1.3em;
+}
+
+#about {
+  background-color: $primary-color;
+  img {
+    width: 100%;
+  }
+}
+
+// About Page
+
+#about-page {
+  .about-img {
+    padding: 10px;
+    border: 1px solid $primary-color;
+  }
+  .social-media {
+    padding: 0;
+    list-style: none;
+    li {
+      padding: 10px;
+    }
+    img {
+      padding-right: 1em;
+    }
+  }
+}
+
+#comic-page {
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+  .container-fluid {
+    max-width: 1400px;
+  }
+}
+
+#meanwhile {
+  background: url('../img/gotham.jpg') no-repeat;
+  background-color: rgba(0,0,0, .5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media screen and (min-width: 1000px){
+  #meanwhile img {
+    max-height: 450px;
+  }
+}
+
+// Music Page
+
+.music-page {
+  background: url('../img/music-bg.jpg') no-repeat;
+  background-color: rgba(0,0,0, .8);
+  background-blend-mode: multiply;
+  background-position: right;
+  background-size: cover;
+}
+
+.music-title {
+  h1 {
+    font-size: 6em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+}
+
+.music-icon {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+// Footer Styles
+
+footer {
+  color: #fff;
+  background: #000;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+// Bootstrap Overrides
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: $primary-color;
+}
+
+@import "_responsive";

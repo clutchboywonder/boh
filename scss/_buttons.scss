@@ -1,0 +1,32 @@
+.btn-white-outline {
+    font-family: 'Bangers', sans-serif;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px 25px;
+    letter-spacing: 0.1em;
+    transition: .33s ease-in-out;
+}
+
+.btn-white-outline:hover {
+    background-color: #fff;
+    color: $primary-color;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+}
+
+.btn-default {
+    background: $primary-color;
+    font-family: 'Bangers', sans-serif;
+    color: #fff;
+    border: 3px solid $primary-color;
+    padding: 10px 25px;
+    letter-spacing: 0.1em;
+    transition: .33s ease-in-out;
+}
+
+.btn-default:hover {
+    background-color: #fff;
+    color: $primary-color;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+}
